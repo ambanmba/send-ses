@@ -1,4 +1,4 @@
-# send-ses
+# send-ses.sh
 Send an e-mail via Amazon SES using only a shell script using the ```curl``` command which is available natively in macOS / Linux.
 
 This version is completely no-frills, all information is hard-coded within the script.
