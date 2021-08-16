@@ -1,7 +1,7 @@
 # send-ses.sh
-Send an e-mail via Amazon SES using only a shell script using the ```curl``` command which is available natively in macOS / Linux.
+Send an e-mail with an attachment via Amazon SES using only a shell script using the ```curl``` command which is available natively in macOS / Linux.
 
-This version is completely no-frills, all information is hard-coded within the script.
+This version is completely no-frills, all information is hard-coded within the script except for the file path of the attachment. 
 
 ### Setup
 
@@ -22,11 +22,11 @@ Edit the file replacing "sesAccess", "ses"Secret" and "sesSMTP" with your corres
 Then simply run the script.
 
 ```
-$ ./send-ses.sh
+$ ./send-ses.sh <filename>
 ```
 
 ### Example
 
 ```
-./send-ses.sh
+./send-ses.sh ~/Documents/Image_00001.jpg
 ```
